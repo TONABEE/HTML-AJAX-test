@@ -1,0 +1,33 @@
+{
+  "name": "simple-card-directory",
+  "version": "1.0.0",
+  "description": "JSONPlaceholder APIを使用したレスポンシブな写真ギャラリーサイト",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "live-server public",
+    "build": "echo 'No build step required for vanilla JS project'",
+    "deploy": "gh-pages -d public"
+  },
+  "keywords": [
+    "javascript",
+    "html5",
+    "css3",
+    "flexbox",
+    "responsive",
+    "api",
+    "vanilla-js",
+    "es6"
+  ],
+  "author": "TONABEE",
+  "license": "MIT",
+  "homepage": "https://tonabee.github.io/simple-card-directory/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TONABEE/simple-card-directory.git"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0",
+    "live-server": "^1.2.2"
+  }
+}
