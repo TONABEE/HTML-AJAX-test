@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>シンプルカード・ディレクトリ</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>フォトギャラリー・ディレクトリ</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">ホーム</a></li>
+            <li><a href="#gallery">ギャラリー</a></li>
+            <li><a href="#about">について</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="search-section">
+            <form class="search-form" id="searchForm">
+                <label for="searchInput">写真を検索</label>
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="タイトルで検索..."
+                    autocomplete="off"
+                >
+            </form>
+        </section>
+
+        <section class="status-section">
+            <div id="loadingMessage" class="message loading">読み込み中...</div>
+            <div id="errorMessage" class="message error" style="display: none;"></div>
+        </section>
+
+        <section class="cards-section">
+            <div id="cardsList" class="cards-grid"></div>
+        </section>
+
+        <section class="pagination-section">
+            <div class="pagination-controls">
+                <button id="prevBtn" class="btn pagination-btn" disabled>前へ</button>
+                <span id="pageInfo" class="page-info">1 / 1</span>
+                <button id="nextBtn" class="btn pagination-btn" disabled>次へ</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 フォトギャラリー・ディレクトリ. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="src/js/main.js"></script>
+</body>
+</html>
